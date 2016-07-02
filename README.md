@@ -1,1 +1,2 @@
-# Training_Automatizacion_Cucumber_Easy_Tico
+# Bienvenidos
+Bienvenidos al training de Cucumber llevado a cabo por **EasyTico**.
