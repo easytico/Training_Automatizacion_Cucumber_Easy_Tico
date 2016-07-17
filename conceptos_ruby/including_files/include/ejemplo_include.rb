@@ -6,7 +6,6 @@ end
  
 class TestClass 
       include Log 
-      # ... 
 end
  
 tc = TestClass.new.class_type
