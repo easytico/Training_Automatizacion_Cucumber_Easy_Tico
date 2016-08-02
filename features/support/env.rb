@@ -6,7 +6,7 @@ require 'capybara/poltergeist'
 require 'selenium-webdriver'
 require 'capybara-screenshot/cucumber'
 
-Capybara.default_wait_time = 30
+Capybara.default_wait_time = 10
 Capybara.default_driver = :selenium
 
 Capybara.app_host = "www.google.com"
@@ -16,3 +16,5 @@ Capybara.register_driver :selenium_chrome do |app|
 	args = %w(--no-sandbox)
     Capybara::Selenium::Driver.new(app, :browser => :chrome, :args => ["--no-sandbox", "--ignore-certificate-errors"])
 end
+
+Capybara::Screenshot.autosave_on_failure = false
